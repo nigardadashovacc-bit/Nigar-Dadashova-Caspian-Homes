@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О компании — Caspian Homes</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+
+    body {
+      background: #f8f5ef;
+    }
+
+    .about-main {
+      padding: 58px 7% 72px;
+      text-align: center;
+      background:
+        radial-gradient(circle at 12% 18%, rgba(199, 167, 106, 0.18), transparent 26%),
+        radial-gradient(circle at 85% 80%, rgba(47, 95, 115, 0.12), transparent 28%),
+        #f8f5ef;
+    }
+
+    .about-main h2 {
+      color: var(--dark);
+      font-size: 44px;
+      line-height: 1.1;
+      margin-bottom: 18px;
+      letter-spacing: -1px;
+    }
+
+    .about-description {
+      max-width: 850px;
+      margin: 0 auto 42px;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.75;
+    }
+
+    .about-cards {
+      max-width: 1050px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 26px;
+    }
+
+    .about-card {
+      min-height: 230px;
+      padding: 32px 26px;
+      border-radius: 24px;
+      background: #ffffff;
+      border: 1px solid rgba(32, 57, 68, 0.08);
+      box-shadow: 0 18px 42px rgba(23, 40, 50, 0.10);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: 0.25s ease;
+    }
+
+    .about-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 24px 52px rgba(23, 40, 50, 0.14);
+    }
+
+    .about-icon {
+      width: 58px;
+      height: 58px;
+      margin-bottom: 20px;
+      display: grid;
+      place-items: center;
+      border-radius: 18px;
+      background: linear-gradient(135deg, var(--gold), #ead8b7);
+      font-size: 27px;
+      box-shadow: 0 12px 24px rgba(199, 167, 106, 0.22);
+    }
+
+    .about-card h3 {
+      color: var(--dark);
+      font-size: 23px;
+      margin-bottom: 12px;
+    }
+
+    .about-card p {
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .footer {
+      padding: 22px 7%;
+    }
+
+    @media (max-width: 900px) {
+      .about-cards {
+        grid-template-columns: 1fr;
+      }
+
+      .about-main h2 {
+        font-size: 34px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<header class="site-header">
+  <a class="logo" href="index.html">Caspian<span>Homes</span></a>
+  <nav class="nav">
+    <a href="index.html">Главная</a>
+    <a href="properties.html">Каталог жилья</a>
+    <a class="active" href="about.html">О компании</a>
+    <a href="contact.html">Контакты</a>
+  </nav>
+</header>
+
+<main>
+  <section class="page-title">
+    <p class="eyebrow">О компании</p>
+    <h1>О Caspian Homes</h1>
+    <p>
+      Пространство для жизни, работы и будущего.
+    </p>
+  </section>
+
+  <section class="about-main">
+    <h2>Недвижимость под ваши цели</h2>
+
+    <p class="about-description">
+      Caspian Homes — это онлайн-информационная система для подбора недвижимости.
+      Мы предлагаем не просто квадратные метры, а пространство для реализации ваших целей.
+      В каталоге представлены объекты с понятной информацией о районе, площади, комнатах и стоимости.
+    </p>
+
+    <div class="about-cards">
+      <article class="about-card">
+        <div class="about-icon">🏠</div>
+        <h3>Удобный выбор</h3>
+        <p>
+          Каталог помогает быстро просмотреть предложения и выбрать подходящий объект.
+        </p>
+      </article>
+
+      <article class="about-card">
+        <div class="about-icon">📍</div>
+        <h3>Понятная информация</h3>
+        <p>
+          В карточках указаны район, тип объекта, площадь, количество комнат и цена.
+        </p>
+      </article>
+
+      <article class="about-card">
+        <div class="about-icon">💬</div>
+        <h3>Быстрая заявка</h3>
+        <p>
+          Клиент может отправить заявку и получить консультацию по выбранному объекту.
+        </p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© 2026 Caspian Homes.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог жилья — Caspian Homes</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="index.html">Caspian<span>Homes</span></a>
+  <nav class="nav">
+    <a href="index.html">Главная</a>
+    <a class="active" href="properties.html">Каталог жилья</a>
+    <a href="about.html">О компании</a>
+    <a href="contact.html">Контакты</a>
+  </nav>
+</header>
+
+<main>
+  <section class="page-title">
+    <p class="eyebrow">Каталог объектов</p>
+    <h1>Доступные предложения жилья</h1>
+    <p>Используйте поиск и фильтр, чтобы быстрее найти подходящий объект.</p>
+  </section>
+
+  <section class="controls">
+    <input id="searchInput" type="text" placeholder="Поиск: район, тип или название...">
+    <select id="typeFilter">
+      <option value="all">Все типы</option>
+      <option value="apartment">Квартира</option>
+      <option value="house">Дом</option>
+      <option value="commercial">Коммерческий объект</option>
+    </select>
+  </section>
+
+  <section class="properties-grid" id="propertiesGrid">
+    <article class="property-card" data-title="Квартира у моря" data-type="apartment" data-district="Белый город" data-price="185000">
+      <div class="property-image img-1"><span>Sea View</span></div>
+      <div class="property-body">
+        <p class="tag">Квартира</p><h3>Квартира у моря</h3>
+        <p>Белый город · 3 комнаты · 96 м²</p><strong>185 000 AZN</strong>
+        <button class="details-btn" data-title="Квартира у моря" data-price="185 000 AZN" data-info="Современная квартира рядом с набережной. Подходит для семьи и инвестиций.">Подробнее</button>
+      </div>
+    </article>
+    <article class="property-card" data-title="Семейный дом" data-type="house" data-district="Мардакан" data-price="310000">
+      <div class="property-image img-2"><span>Family House</span></div>
+      <div class="property-body">
+        <p class="tag">Дом</p><h3>Семейный дом</h3>
+        <p>Мардакан · 5 комнат · 210 м²</p><strong>310 000 AZN</strong>
+        <button class="details-btn" data-title="Семейный дом" data-price="310 000 AZN" data-info="Просторный дом с двором, парковкой и удобным расположением.">Подробнее</button>
+      </div>
+    </article>
+    <article class="property-card" data-title="Студия в центре" data-type="apartment" data-district="Насими" data-price="98000">
+      <div class="property-image img-3"><span>City Studio</span></div>
+      <div class="property-body">
+        <p class="tag">Квартира</p><h3>Студия в центре</h3>
+        <p>Насими · 1 комната · 48 м²</p><strong>98 000 AZN</strong>
+        <button class="details-btn" data-title="Студия в центре" data-price="98 000 AZN" data-info="Компактная квартира для одного человека или сдачи в аренду.">Подробнее</button>
+      </div>
+    </article>
+    <article class="property-card" data-title="Офисное помещение" data-type="commercial" data-district="Хатаи" data-price="220000">
+      <div class="property-image img-4"><span>Office</span></div>
+      <div class="property-body">
+        <p class="tag">Коммерция</p><h3>Бизнес-пространство</h3>
+        <p>Хатаи · 4 кабинета · 130 м²</p><strong>220 000 AZN</strong>
+        <button class="details-btn" data-title="Офисное помещение" data-price="220 000 AZN" data-info="Помещение для офиса, учебного центра или малого бизнеса.">Подробнее</button>
+      </div>
+    </article>
+    <article class="property-card" data-title="Новая квартира" data-type="apartment" data-district="Ясамал" data-price="145000">
+      <div class="property-image img-5"><span>Modern Apartment</span></div>
+      <div class="property-body">
+        <p class="tag">Квартира</p><h3>Квартира с современным интерьером</h3>
+        <p>Ясамал · 2 комнаты · 72 м²</p><strong>145 000 AZN</strong>
+        <button class="details-btn" data-title="Новая квартира" data-price="145 000 AZN" data-info="Квартира в новом жилом комплексе с охраной и парковкой.">Подробнее</button>
+      </div>
+    </article>
+    <article class="property-card" data-title="Дом с садом" data-type="house" data-district="Бузовна" data-price="275000">
+      <div class="property-image img-6"><span>Garden</span></div>
+      <div class="property-body">
+        <p class="tag">Дом</p><h3>Дом с садом</h3>
+        <p>Бузовна · 4 комнаты · 180 м²</p><strong>275 000 AZN</strong>
+        <button class="details-btn" data-title="Дом с садом" data-price="275 000 AZN" data-info="Уютный дом с зелёной зоной, террасой и отдельным входом.">Подробнее</button>
+      </div>
+    </article>
+  </section>
+</main>
+
+<div id="propertyModal" class="modal">
+  <div class="modal-content">
+    <button id="closeModal" class="close-modal">×</button>
+    <h2 id="modalTitle"></h2>
+    <p id="modalInfo"></p>
+    <strong id="modalPrice"></strong>
+    <a class="btn primary modal-link" href="contact.html">Связаться с консультантом</a>
+  </div>
+</div>
+
+<footer class="footer"><p>© 2026 Caspian Homes.</p></footer>
+<script src="js/script.js"></script>
+</body>
+</html>

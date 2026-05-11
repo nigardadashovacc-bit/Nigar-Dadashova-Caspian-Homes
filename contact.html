@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — Caspian Homes</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="index.html">Caspian<span>Homes</span></a>
+  <nav class="nav">
+    <a href="index.html">Главная</a>
+    <a href="properties.html">Каталог жилья</a>
+    <a href="about.html">О компании</a>
+    <a class="active" href="contact.html">Контакты</a>
+  </nav>
+</header>
+
+<main>
+  <section class="page-title">
+    <p class="eyebrow">Контакты</p>
+    <h1>Оставьте заявку на консультацию</h1>
+    <p>Заполните форму, и менеджер компании свяжется с вами для уточнения деталей.</p>
+  </section>
+
+  <section class="contact-layout">
+    <div class="contact-info">
+      <h2>Данные компании</h2>
+      <p><strong>Телефон:</strong> +994 50 123 45 67</p>
+      <p><strong>Email:</strong> info@caspianhomes.az</p>
+      <p><strong>Адрес:</strong> Баку, Азербайджан</p>
+      <div class="map-box">Условная карта офиса</div>
+    </div>
+
+    <form id="contactForm" class="contact-form">
+      <label>Ваше имя<input id="name" type="text" placeholder="Введите имя"></label>
+      <label>Email<input id="email" type="email" placeholder="Введите email"></label>
+      <label>Сообщение<textarea id="message" placeholder="Какой объект вас интересует?"></textarea></label>
+      <button type="submit" class="btn primary">Отправить заявку</button>
+      <p id="formMessage" class="form-message"></p>
+    </form>
+  </section>
+
+  <section class="section muted calculator">
+    <div>
+      <p class="eyebrow">Дополнительная функция</p>
+      <h2>Простой ипотечный расчёт</h2>
+    </div>
+    <div class="calc-box">
+      <input id="priceCalc" type="number" placeholder="Цена жилья, AZN">
+      <input id="firstPayment" type="number" placeholder="Первый взнос, AZN">
+      <button id="calcBtn" class="btn secondary" type="button">Рассчитать остаток</button>
+      <p id="calcResult"></p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer"><p>© 2026 Caspian Homes.</p></footer>
+<script src="js/script.js"></script>
+</body>
+</html>
